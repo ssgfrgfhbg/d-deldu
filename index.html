@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bitte warten...</title>
+
+<style>
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#spider {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+</head>
+
+<body>
+
+<h1 id="text">🔄 Bild wird geladen...</h1>
+
+<img id="spider" src="spider.jpg">
+
+<script>
+setTimeout(function() {
+    document.getElementById("text").style.display = "none";
+    document.getElementById("spider").style.display = "block";
+}, 4000);
+</script>
+
+</body>
+</html>
